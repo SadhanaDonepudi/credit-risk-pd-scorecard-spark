@@ -1,0 +1,5 @@
+# generated data (2.2M rows) is reproducible via src/generate.py; too big for git
+data/
+__pycache__/
+*.pyc
+.venv/

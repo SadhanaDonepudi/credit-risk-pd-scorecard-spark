@@ -1,0 +1,16 @@
+strategy,approval_rate,expected_loss
+legacy_scorecard,0.5,704991368.1233127
+legacy_scorecard,0.6,934213777.115592
+legacy_scorecard,0.7,1203184963.3524714
+legacy_scorecard,0.8,1525127045.583569
+legacy_scorecard,0.9,1925345122.0172496
+new_scorecard,0.5,586105488.9594074
+new_scorecard,0.6,755598785.8962388
+new_scorecard,0.7,978090895.8561003
+new_scorecard,0.8,1318847649.0855682
+new_scorecard,0.9,1820684996.3155596
+xgboost_challenger,0.5,399835310.07306033
+xgboost_challenger,0.6,586383188.1191065
+xgboost_challenger,0.7,840396824.7810787
+xgboost_challenger,0.8,1189615997.2430644
+xgboost_challenger,0.9,1725575427.7748559

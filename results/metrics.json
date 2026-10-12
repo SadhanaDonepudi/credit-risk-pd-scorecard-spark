@@ -1,0 +1,174 @@
+{
+  "n_loans": 2200000,
+  "n_attributes": 60,
+  "n_oot": 944046,
+  "oot_bad_rate": 0.16400895719064537,
+  "train_bad_rate": 0.1490271274321814,
+  "legacy": {
+    "auc": 0.6905174464069833,
+    "gini": 0.38103489281396663
+  },
+  "scorecard": {
+    "auc": 0.7471330223922302,
+    "ks_points": 39.49489128260173,
+    "gini": 0.49426604478446046,
+    "n_features": 34
+  },
+  "xgboost": {
+    "auc": 0.7959565493848549,
+    "gini": 0.5919130987697099
+  },
+  "gini_improvement_points": 9.764705398524942,
+  "psi_scorecard_train_vs_oot": 0.0006955841152608113,
+  "cutoff": {
+    "baseline": "legacy_scorecard",
+    "challenger": "new_scorecard",
+    "approval_rate": 0.7,
+    "expected_loss_baseline": 1203184963.3524714,
+    "expected_loss_challenger": 978090895.8561003,
+    "loss_reduction_pct": 18.70818488864625,
+    "lgd": 0.75,
+    "approval_rate_achieved": 0.6999997881459166,
+    "bad_rate_approved_pct": 8.792401094377997,
+    "bad_rate_declined_pct": 34.154031933449616
+  },
+  "cutoff_table": [
+    {
+      "strategy": "legacy_scorecard",
+      "approval_rate": 0.5,
+      "expected_loss": 704991368.1233127
+    },
+    {
+      "strategy": "legacy_scorecard",
+      "approval_rate": 0.6,
+      "expected_loss": 934213777.115592
+    },
+    {
+      "strategy": "legacy_scorecard",
+      "approval_rate": 0.7,
+      "expected_loss": 1203184963.3524714
+    },
+    {
+      "strategy": "legacy_scorecard",
+      "approval_rate": 0.8,
+      "expected_loss": 1525127045.583569
+    },
+    {
+      "strategy": "legacy_scorecard",
+      "approval_rate": 0.9,
+      "expected_loss": 1925345122.0172496
+    },
+    {
+      "strategy": "new_scorecard",
+      "approval_rate": 0.5,
+      "expected_loss": 586105488.9594074
+    },
+    {
+      "strategy": "new_scorecard",
+      "approval_rate": 0.6,
+      "expected_loss": 755598785.8962388
+    },
+    {
+      "strategy": "new_scorecard",
+      "approval_rate": 0.7,
+      "expected_loss": 978090895.8561003
+    },
+    {
+      "strategy": "new_scorecard",
+      "approval_rate": 0.8,
+      "expected_loss": 1318847649.0855682
+    },
+    {
+      "strategy": "new_scorecard",
+      "approval_rate": 0.9,
+      "expected_loss": 1820684996.3155596
+    },
+    {
+      "strategy": "xgboost_challenger",
+      "approval_rate": 0.5,
+      "expected_loss": 399835310.07306033
+    },
+    {
+      "strategy": "xgboost_challenger",
+      "approval_rate": 0.6,
+      "expected_loss": 586383188.1191065
+    },
+    {
+      "strategy": "xgboost_challenger",
+      "approval_rate": 0.7,
+      "expected_loss": 840396824.7810787
+    },
+    {
+      "strategy": "xgboost_challenger",
+      "approval_rate": 0.8,
+      "expected_loss": 1189615997.2430644
+    },
+    {
+      "strategy": "xgboost_challenger",
+      "approval_rate": 0.9,
+      "expected_loss": 1725575427.7748559
+    }
+  ],
+  "shap_top15": [
+    {
+      "attribute": "grade_num",
+      "mean_abs_shap": 0.47054594889597373
+    },
+    {
+      "attribute": "dti",
+      "mean_abs_shap": 0.2984801960439788
+    },
+    {
+      "attribute": "term_num",
+      "mean_abs_shap": 0.2835851155599376
+    },
+    {
+      "attribute": "bc_util",
+      "mean_abs_shap": 0.09820562882605223
+    },
+    {
+      "attribute": "revol_util",
+      "mean_abs_shap": 0.02341280555158521
+    },
+    {
+      "attribute": "emp_length_num",
+      "mean_abs_shap": 0.022745493014320824
+    },
+    {
+      "attribute": "annual_inc",
+      "mean_abs_shap": 0.017188722471668083
+    },
+    {
+      "attribute": "mths_since_oldest_il_open",
+      "mean_abs_shap": 0.015854637344094463
+    },
+    {
+      "attribute": "pct_tl_nvr_dlq",
+      "mean_abs_shap": 0.015308848907786082
+    },
+    {
+      "attribute": "avg_cur_bal",
+      "mean_abs_shap": 0.010784842580480451
+    },
+    {
+      "attribute": "loan_amnt_to_inc",
+      "mean_abs_shap": 0.009021908158203487
+    },
+    {
+      "attribute": "total_bc_limit",
+      "mean_abs_shap": 0.007599240377487972
+    },
+    {
+      "attribute": "total_bal_ex_mort",
+      "mean_abs_shap": 0.006921227592201619
+    },
+    {
+      "attribute": "total_acc",
+      "mean_abs_shap": 0.006697656850033661
+    },
+    {
+      "attribute": "annual_inc_log",
+      "mean_abs_shap": 0.004869285632673001
+    }
+  ]
+}

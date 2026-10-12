@@ -1,0 +1,10 @@
+[
+  "tests/test_scorecard.py::test_attribute_count_is_exactly_sixty",
+  "tests/test_scorecard.py::test_feature_row_count_matches_raw",
+  "tests/test_scorecard.py::test_metric_sanity",
+  "tests/test_scorecard.py::test_readme_number_consistency",
+  "tests/test_scorecard.py::test_row_count_exact",
+  "tests/test_scorecard.py::test_sql_documents_sixty_attributes",
+  "tests/test_scorecard.py::test_woe_iv_correctness",
+  "tests/test_scorecard.py::test_woe_transform_applies_bins"
+]
